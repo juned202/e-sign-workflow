@@ -1,0 +1,36 @@
+<!-- frontend/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSign Workflow</title>
+</head>
+<body>
+    <h1>eSign Workflow Application</h1>
+    
+    <form id="uploadForm" enctype="multipart/form-data" style="text-align: center;">
+        <input type="file" name="pdf" id="pdfInput" accept=".pdf">
+        <button type="submit"  ">Upload PDF</button> 
+    </form>
+
+    <div  id="preview" style="text-align: center; margin: 50px;">
+        <button  >Preview PDF</button>
+      </div>
+
+      <div  id="preview" style="text-align: center; margin: 50px;">
+        <button  >Add eSign Tags</button>
+      </div>
+
+      <div  id="preview" style="text-align: center; margin: 50px;">
+        <button  >Submit for eSign</button>
+      </div>
+    
+    <div id="pdfList"></div>
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+</body>
+</html>
